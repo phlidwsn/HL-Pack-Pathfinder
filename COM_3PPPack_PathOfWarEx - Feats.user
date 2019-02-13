@@ -50,15 +50,6 @@
     <tag group="Helper" tag="ShowSpec"/>
     <exprreq message="Must be able to Claim creatures"><![CDATA[#hasability[cPW4DrkClm] + #hasability[cPW2SlClm] <> 0]]></exprreq>
     </thing>
-  <thing id="fPWDrkAgIn" name="Darksilver Initiate" description="{b}Prerequisite:{/b} Quick Draw, 2 Steel Serpent Maneuvers known, 2 Mithral Current Maneuvers known\n\n{b}Benefit:{/b} Once per encounter, when you initiate a Mithral Current Strike and a Steel Serpent boost in the same round, resolve the Mithral Current maneuver as if you&apos;d drawn your weapon as part of the attack." compset="Feat" uniqueness="useronce">
-    <usesource source="srcPOWEx"/>
-    <tag group="fCategory" tag="Combat"/>
-    <tag group="ProductId" tag="HLCommunit"/>
-    <tag group="Helper" tag="ShowSpec"/>
-    <exprreq message="Quick Draw feat required">#hasfeat[fQuickDraw] = 1</exprreq>
-    <exprreq message="Must know 2 Steel Serpent maneuvers"><![CDATA[hero.tagis[HasMan.SteelSerp] >= 2]]></exprreq>
-    <exprreq message="Must know 2 Mithral Current maneuvers"><![CDATA[hero.tagis[HasMan.MithCurr] >= 2]]></exprreq>
-    </thing>
   <thing id="fPWElecMan" name="Electrum Manticore" description="{b}Prerequisite:{/b} 2 Silver Crane Maneuvers known, 2 Golden Lion Maneuvers known\n\n{b}Benefit:{/b} Once per encounter, you may initiate a Golden Lion boost as part of assuming a Silver Crane stance, or initiate a Silver Crane boost as part of assuming a Golden Lion stance." compset="Feat" uniqueness="useronce">
     <usesource source="srcPOWEx"/>
     <tag group="fCategory" tag="Combat"/>
